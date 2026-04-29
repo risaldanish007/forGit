@@ -11,7 +11,7 @@
     "server": "json-server --watch db.json --port 3000"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.100.1",
+    "@tanstack/react-query": "^5.100.5",
     "json-server": "^1.0.0-beta.15",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"

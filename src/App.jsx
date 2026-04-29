@@ -6,12 +6,13 @@ import './App.css'
 import Register from './componentes/Register'
 import AddUser from './tanstack/Fetching'
 import Parent from './Opti/Parent'
+import Users from './FetchAndLIst/FetchAndList'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Register/>
+    <Users/>
   )
 }
 
