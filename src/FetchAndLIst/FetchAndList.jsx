@@ -8,7 +8,7 @@ export default function User(){
   const{data,isLoading,isError,error}= useQuery({
     queryKey:["users"],
     queryFn: async()=>{
-      const res = await fetch("https://jsonplaceholder.typicode.com/users");
+      const res = await fetch("http://localhost:3000/users");
 
       if(!res.ok){
         throw new Error("failed to fetch")
@@ -38,13 +38,42 @@ export default function User(){
       />
       <button onClick={searchUser}>search</button>
       <div>
-        {showUser ?(<div>
+        {showUser ?(<div     style={{
+      border: "1px solid white",
+      padding: "20px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+    }}>
           <h2>user found</h2>
           <p>name: {showUser.name}</p>
           <p>email: {showUser.email}</p>
           <p>city: {showUser.address.city}</p>
         </div>):(<div>no user found</div>)}
       </div>
+      <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+  }}
+>
+  <div
+    style={{
+      border: "1px solid white",
+      padding: "20px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+    }}
+  >
+    {[...data].reverse().map((user) => (
+      <p key={user.id}>
+        {user.id}: {user.name}
+      </p>
+    ))}
+  </div>
+</div>
     </div>
   )
+
 }

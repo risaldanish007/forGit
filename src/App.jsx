@@ -7,12 +7,13 @@ import Register from './componentes/Register'
 import AddUser from './tanstack/Fetching'
 import Parent from './Opti/Parent'
 import Users from './FetchAndLIst/FetchAndList'
+import TodoApp from './todoApp/ToDo'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Users/>
+    <TodoApp/>
   )
 }
 
