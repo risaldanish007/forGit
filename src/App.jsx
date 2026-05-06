@@ -11,12 +11,13 @@ import TodoApp from './todoApp/ToDo'
 import Counter from './useRef/counter'
 import Form from './new/Form'
 import Counter2 from './Reducer/Reducer'
+import Light from './Reducer/Traffic'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Counter2/>
+    <Light/>
   )
 }
 

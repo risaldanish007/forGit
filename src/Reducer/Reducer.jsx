@@ -21,7 +21,6 @@ function Counter2(){
         <h2>{state.count}</h2>
         <button onClick={()=>dispatch({type:"increment"})}>add</button>
         <button onClick={()=>dispatch({type:"decrement"})}>sub</button>
-
         </>
     )
 }
