@@ -8,12 +8,15 @@ import AddUser from './tanstack/Fetching'
 import Parent from './Opti/Parent'
 import Users from './FetchAndLIst/FetchAndList'
 import TodoApp from './todoApp/ToDo'
+import Counter from './useRef/counter'
+import Form from './new/Form'
+import Counter2 from './Reducer/Reducer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <TodoApp/>
+    <Counter2/>
   )
 }
 
